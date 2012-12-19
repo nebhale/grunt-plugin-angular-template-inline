@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 			var id = idGenerator.create(file);
 			grunt.verbose.write('Appending ' + id + '...');
 
-			var template = templateWrapper.wrap(grunt.file.read(file));
+			var template = templateWrapper.wrap(id, grunt.file.read(file));
 
 			grunt.verbose.ok();
 			return template;
