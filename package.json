@@ -1,0 +1,50 @@
+{
+	"name": "grunt-plugin-angular-template-inline",
+	"version": "1.0.0-dev",
+
+	"dependencies": {
+		"lodash": "~0.10"
+	},
+	"devDependencies": {
+		"buster": "~0.6",
+		"grunt": "~0.4",
+		"grunt-cli": "~0.1",
+		"grunt-contrib-jshint": "~0.1",
+		"grunt-contrib-watch": "~0.2",
+		"grunt-plugin-buster": "~1.4"
+	},
+	"engines": {
+		"node": "~0.8",
+		"npm": "~1.1"
+	},
+
+	"main": "./tasks/angular-template-inline",
+	"scripts": {
+		"test": "grunt test"
+	},
+
+	"description": "A GruntJS plugin that inlines AngularJS templates into an HTML file",
+	"keywords": [
+		"angular",
+		"angularjs",
+		"gruntplugin",
+		"html",
+		"template"
+	],
+	"licenses": [{
+		"type": "Apache-2.0",
+		"url": "http://opensource.org/licenses/Apache-2.0"
+	}],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nebhale/grunt-plugin-angular-template-inline"
+	},
+	"bugs": {
+		"url": "https://github.com/nebhale/grunt-plugin-angular-template-inline/issues"
+	},
+	"maintainers": [{
+		"name": "Ben Hale",
+		"email": "nebhale@nebhale.com",
+		"web": "http://twitter.com/nebhale"
+	}]
+}

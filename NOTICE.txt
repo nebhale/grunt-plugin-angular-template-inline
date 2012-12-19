@@ -1,0 +1,2 @@
+   grunt-plugin-angular-template-inline
+   Copyright 2012 the original author or authors.
