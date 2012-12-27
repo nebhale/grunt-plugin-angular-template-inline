@@ -11,7 +11,7 @@
 		"grunt-cli": "~0.1",
 		"grunt-contrib-jshint": "~0.1",
 		"grunt-contrib-watch": "~0.2",
-		"grunt-plugin-buster": "~1.4"
+		"grunt-plugin-buster": "~2.0"
 	},
 	"engines": {
 		"node": "~0.8",

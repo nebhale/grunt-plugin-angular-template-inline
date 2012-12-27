@@ -13,6 +13,10 @@ module.exports = function(grunt) {
 			test: ['test/**/*.js']
 		},
 
+		buster: {
+			angularTemplateInline: {}
+		},
+
 		jshint: {
 			src: '<%= locations.src %>',
 			test: '<%= locations.test %>',

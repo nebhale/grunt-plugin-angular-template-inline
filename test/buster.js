@@ -16,7 +16,7 @@
 
 /*jshint node:true*/
 
-exports.vas = {
+exports.angularTemplateInline = {
 	environment: 'node',
 	rootPath: '../',
 	tests: ['test/**/*.test.js']
