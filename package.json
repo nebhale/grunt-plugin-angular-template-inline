@@ -8,7 +8,6 @@
 	"devDependencies": {
 		"buster": "~0.6",
 		"grunt": "~0.4",
-		"grunt-cli": "~0.1",
 		"grunt-contrib-jshint": "~0.1",
 		"grunt-contrib-watch": "~0.2",
 		"grunt-plugin-buster": "~2.0"
