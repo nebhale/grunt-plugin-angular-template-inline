@@ -18,7 +18,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-plugin-angular-template-inline');
 ```
 
-_This plugin was updated to work with Grunt 0.4. It is based on [nebhale/grunt-plugin-angular-template-inline](https://github.com/nebhale/grunt-plugin-angular-template-inline) for grunt 0.3._
+_This plugin was updated to work with Grunt 0.4. It is based on [nebhale/grunt-plugin-angular-template-inline](https://github.com/nebhale/grunt-plugin-angular-template-inline)._
 
 ## Angular template inline task
 _Run this task with the `grunt angularTemplateInline` command._
@@ -31,14 +31,14 @@ Specify the templates to be inlined into a target file. The base file (typically
 
 ```js
 angularTemplateInline: {
-	app: {
-		files: [
+  app: {
+    files: [
       {
         src: ['<%= yeoman.app %>/views/*.html'], // Templates to be inlined
         dest: '<%= yeoman.dist %>/index.html', // Destination file
         baseFile: '<%= yeoman.app %>/index.html' // Base file
       }
     ]
-	}
+  }
 },
 ```
