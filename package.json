@@ -12,6 +12,9 @@
 		"grunt-contrib-watch": "~0.2",
 		"grunt-plugin-buster": "~2.0"
 	},
+	"peerDependencies": {
+	   "grunt": "~0.4"
+	 },
 	"engines": {
 		"node": "~0.8",
 		"npm": "~1.1"
