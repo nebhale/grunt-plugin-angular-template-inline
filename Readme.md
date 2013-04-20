@@ -34,9 +34,9 @@ angularTemplateInline: {
   app: {
     files: [
       {
-        src: ['<%= yeoman.app %>/views/*.html'], // Templates to be inlined
-        dest: '<%= yeoman.dist %>/index.html', // Destination file
-        baseFile: '<%= yeoman.app %>/index.html' // Base file
+        src: ['app/views/*.html'], // Templates to be inlined
+        dest: 'dist/index.html', // Destination file
+        baseFile: 'app/index.html' // Base file
       }
     ]
   }
