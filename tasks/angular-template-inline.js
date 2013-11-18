@@ -26,27 +26,28 @@ var TemplateWrapper = require('./support/template-wrapper');
 module.exports = function(grunt) {
 
 	grunt.registerMultiTask('angularTemplateInline', 'Inline AngularJS templates into an HTML file', function() {
-		var files = this.file.src;
-		var root = files.shift();
 
-		var idGenerator = new IdGenerator(root);
 		var templateInserter = new TemplateInserter();
 		var templateWrapper = new TemplateWrapper();
 
-		var templates = _.map(files, function(file) {
-			var id = idGenerator.create(file);
-			grunt.verbose.write('Appending ' + id + '...');
+		_.each(this.files, function (file) {
+			var idGenerator = new IdGenerator(file.baseFile);
 
-			var template = templateWrapper.wrap(id, grunt.file.read(file));
+			var templates = _.map(file.src, function (src) {
+				var id = idGenerator.create(src);
+				grunt.verbose.write('Appending ' + id + '...');
+				var template = templateWrapper.wrap(id, grunt.file.read(src));
+				grunt.verbose.ok();
 
-			grunt.verbose.ok();
-			return template;
+				return template;
+			});
+
+			var baseContent = grunt.file.read(file.dest);
+			var targetContent = templateInserter.insert(baseContent, templates);
+
+			grunt.file.write(file.dest, targetContent);
+
+			grunt.log.ok(file.src.length + ' template' + (file.src.length === 1 ? '' : 's') + ' inlined');
 		});
-
-		var baseContent = grunt.file.read(root);
-		var targetContent = templateInserter.insert(baseContent, templates);
-
-		grunt.file.write(this.file.dest, targetContent);
-		grunt.log.ok(files.length + ' template' + (files.length === 1 ? '' : 's') + ' inlined to ' + this.file.dest);
 	});
 };
