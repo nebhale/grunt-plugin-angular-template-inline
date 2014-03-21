@@ -1,6 +1,9 @@
-# grunt-plugin-angular-template-inline [![Build Status](https://secure.travis-ci.org/nebhale/grunt-plugin-angular-template-inline.png?branch=master)](http://travis-ci.org/nebhale/grunt-plugin-angular-template-inline)
+# grunt-plugin-angular-template-inline
+[![Build Status](https://travis-ci.org/nebhale/grunt-plugin-angular-template-inline.svg?branch=master)](https://travis-ci.org/nebhale/grunt-plugin-angular-template-inline)
+[![Dependency Status](https://gemnasium.com/nebhale/grunt-plugin-angular-template-inline.svg)](https://gemnasium.com/nebhale/grunt-plugin-angular-template-inline)
+[![Code Climate](https://codeclimate.com/github/nebhale/grunt-plugin-angular-template-inline.svg)](https://codeclimate.com/github/nebhale/grunt-plugin-angular-template-inline)
 
-> Inlines AngularJS templates into an HTML file
+Inlines AngularJS templates into an HTML file
 
 ## Getting Started
 
